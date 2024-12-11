@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Anticloro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+
+        #mi-imagen {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #mi-boton {
+            position: absolute;
+            top: 92%;
+            left: 50%;
+            width: 12rem;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgba(112, 220, 228, 0.7);
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 0.31rem;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        #mi-boton:hover {
+            background-color: rgba(37, 167, 177, 0.7);
+        }
+
+        @media (max-width: 1024px) {
+            #mi-boton {
+                width: 10rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+
+            #mi-boton {
+                width: 10rem;
+                
+                font-size: 0.9rem;
+                top: 80%;
+                
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            body {
+                justify-content: flex-start;
+                padding: 0;
+                margin-top: 0;
+            }
+
+            #mi-imagen {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            #mi-boton {
+                width: 90%;
+                font-size: 1rem;
+                padding: 12px 0;
+                top: 75%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/pop up navidad.jpg" alt="Imagen" id="mi-imagen">
+    <a href="https://www.speed.com.ar/" id="mi-boton">Visita Nuestro Sitio</a>
+</body>
+
+</html>
